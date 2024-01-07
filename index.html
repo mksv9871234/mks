@@ -118,7 +118,54 @@
                 text-shadow: 0px 1px 3px rgba(0,0,0,0.5);
             }
  }
-  
+
+.whasapp img{
+  width: 400px;
+ }
+   
+ .business-card-body{
+	background:linear-gradient(to right, blue,rgb(136, 136, 231));
+	padding: 20px;
+	margin: 10px auto;
+	color: white;
+	text-align: center;
+	text-wrap: wrap;
+	width: 90%;
+	height: 60vh;
+	border-radius: 10px;
+	transition: transform 0.7s ease;
+}
+.business-card-body h4{
+  color: white;
+}
+.business-card-body:hover{
+	transform: scale(1.2)
+}
+#box-row{
+	display: flex;
+	justify-content: space-evenly;
+}
+@media (max-width:768px){
+  #box-row{
+    flex-direction: column;
+  }
+  .business-card-body{
+    height: 90vh;
+  }
+}
+.btn-service{
+  width: 100px;
+  height: 40px;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  transition: all 0.4s;
+}
+.btn-service:hover{
+  background-color: blue;
+  color: white;
+}	 
   </style>
 </head>
 
@@ -128,7 +175,7 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">PORTFOLIO</a></h1>
+      <h1 class="logo"><a href="index.html">MKSV</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -235,109 +282,62 @@
 	
 
 
+ 
     <!-- ======= Services Section ======= -->
-    <section id="services" class="services-mf pt-5 route">
-      <div class="container">
+    <section>
+      <div class="container-fluid mb-5">
         <div class="row">
           <div class="col-sm-12">
             <div class="title-box text-center">
               <h3 class="title-a">
-                Services
+                Services 
               </h3>
-              
               <div class="line-mf"></div>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-briefcase"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Web Design</h2>
-                <p class="s-description text-center">
-                  Web designing is the process of planning, conceptualizing,
-				  and implementing the plan for designing a website in a way that is functional 
-				  and offers a good user experience.A web design service provides you with a customized website design that's perfect for your business or personal site. They'll work with you to create a design that matches your brand,
-				  while giving your customers a seamless user experience that will delight them.
-                </p>
+          <div id="box-row">
+          <div class="col-sm-6">
+            <div class="business-card-body">
+              <div>
+                <h4 class="p-3">Web Design</h4>
+                <p>"At MKSV, we specialize in crafting impactful content tailored for web design. Our team of skilled writers combines creativity with technical precision to deliver engaging website copy, persuasive product descriptions, and informative blog posts. Collaborating seamlessly with web designers, we ensure cohesive and memorable user experiences. From captivating your audience to enhancing SEO, trust us to articulate your brand's story in the ever-evolving world of web design."</p>
+                <button type="button" class="btn-service">select</button>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-card-checklist"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Web Development</h2>
-                <p class="s-description text-center">
-                 We are help create all types of web-based software and ensure great experience for web users. Different types 
-				  of web solutions may seem similar from the outside but we approach them differently and know what factors
-				  are winning in each case.
-                </p>
-              </div>
+          <div class="col-sm-6">
+            <div class="business-card-body">
+  
+              <h4 class="p-3">Web Development</h4>
+              <p>At MKSV, we offer specialized writing services tailored to the dynamic field of web development. Our expert writers understand the intricacies of translating complex technical concepts into clear, compelling content. Whether you need concise code documentation, user-friendly interface explanations, or engaging blog posts on the latest industry trends, our team is equipped to articulate your web development journey. We collaborate closely with developers to ensure that our content seamlessly aligns with the technical aspects of your projects.</p>
+              <button type="button" class="btn-service">select</button>
+  
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-bar-chart"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">It Conusulting</h2>
-                <p class="s-description text-center">
-                  IT consulting services are advisory services that help clients assess different 
-				  technology strategies and, in doing so, align their technology strategies with their business or process strategies.
-                </p>
-              </div>
+          </div>
+          </div>
+        <div class="row">
+          <div id="box-row">
+          <div class="col-sm-6">
+            <div class="business-card-body">
+  
+              <h4 class="p-3">business Card Design</h4>
+              <p>At MKSV, we take pride in our meticulous approach to business card design. Our team of creative professionals combines artistic flair with strategic thinking to craft unique and impactful business cards tailored to your brand. We understand the importance of leaving a lasting first impression, and our designs not only reflect your brand identity but also convey a sense of professionalism and innovation. From sleek minimalist designs to vibrant and bold statements, we offer a range of options to suit your business personality. </p>
+              <button type="button" class="btn-service">select</button>
+  
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-binoculars"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Responsive Design</h2>
-                <p class="s-description text-center">
-                  Responsive web design provides solutions by making websites and applications smart enough to resize and adapt its content
-				  based on the screen size of the device. This increases the development speed, makes project manageable and increases the usability.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-brightness-high"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Graphic Design</h2>
-                <p class="s-description text-center">
-                 Graphic design is a craft where professionals create visual content to communicate messages. By applying visual hierarchy and page layout techniques, designers use typography and pictures to meet users'
-				 specific needs and focus on the logic of displaying elements in interactive designs, to optimize the user experience.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-calendar4-week"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Brand-desin</h2>
-                <p class="s-description text-center">
-                  Brand design is the process of crafting a brand's visual identity by creating a unified system of design elements like logos, colors, typography,
-				  illustration, and photography. A brand's visual identity is the aesthetic embodiment of its positioning and personality.
-                </p>
-              </div>
+          <div class="col-sm-6">
+            <div class="business-card-body">
+              <h4 class="p-3">Website Development</h4>
+              <p>At MKSV, we specialize in comprehensive website management services, ensuring a seamless and optimized online presence for your business. From regular updates, security enhancements, and content management to performance optimization and user experience enhancements, our dedicated team handles it all. We prioritize the technical health of your website, allowing you to focus on what matters most – growing your business. Trust us to keep your website running smoothly, secure, and up-to-date, so you can make a lasting impression in the digital landscape.</p>
+              <button type="button" class="btn-service">select</button>
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section><!-- End Services Section -->
 
